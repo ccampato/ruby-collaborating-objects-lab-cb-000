@@ -17,6 +17,7 @@ class Song
 
       new_instance = Song.new(song_name)
       new_instance.artist_name= artist_name
+      new_instance.artist.save
     end
   end
 end
