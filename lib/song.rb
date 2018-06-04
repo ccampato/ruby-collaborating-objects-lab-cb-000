@@ -16,7 +16,7 @@ class Song
       artist_name= entry.split(" - ")[0]
 
       new_instance = Song.new(song_name)
-      new_instance.artist= artist_name
+      new_instance.artist_name= artist_name
     end
   end
 end
