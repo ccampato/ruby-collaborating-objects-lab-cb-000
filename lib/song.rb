@@ -9,7 +9,7 @@ class Song
 
   def artist_name=(name)
     if (self.artist.nil?)
-      self.artist = Artist.find_or_create_by_name(name)
+      self.artist= Artist.find_or_create_by_name(name)
     else
       self.artist.name = name
     end
@@ -23,6 +23,5 @@ class Song
     song.name= song_name
     song.artist_name= song_artist
     song
-
   end
 end
