@@ -12,6 +12,7 @@ class Song
     else
       self.artist.name = name
     end
+    self.artist.save
   end
 
   def self.new_by_filename(file)
