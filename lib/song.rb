@@ -14,6 +14,9 @@ class Song
     file.each do |entry|
       song_name= entry.split(" - ")[1]
       artist_name= entry.split(" - ")[0]
+
+      new_instance = Song.new(song_name)
+      new_instance.artist= artist_name
     end
   end
 end
