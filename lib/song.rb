@@ -20,7 +20,7 @@ class Song
 
     song = Song.new(song_name)
     song.artist_name= song_artist
+    song.artist.save
     song
-    binding.pry
   end
 end
