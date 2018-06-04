@@ -1,3 +1,4 @@
+require "pry"
 class Song
   attr_accessor :name
   attr_reader :artist
@@ -17,7 +18,9 @@ class Song
 
       new_instance = Song.new(song_name)
       new_instance.artist_name= artist_name
+      binding.pry
       new_instance.artist.save
+
     end
   end
 end
