@@ -7,7 +7,7 @@ class Song
     @name = name
   end
 
-  def artist_name=(name)
+  def artist=(name)
     artist= Artist.find_or_create_by_name(name)
   end
 
@@ -17,7 +17,7 @@ class Song
       artist_name= entry.split(" - ")[1]
 
       new_instance = Song.new(song_name)
-      new_instance.artist_name= artist_name
+      new_instance.artis= artist_name
       binding.pry
       new_instance.artist.save
 
