@@ -23,6 +23,6 @@ class Song
     song.artist_name= song_artist
     song.artist.add_song(song)
     song
-    binding.pry
+    
   end
 end
