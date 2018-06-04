@@ -12,6 +12,7 @@ class MP3Importer
 
   def import
     filename = self.files
+    binding.pry
     Song.new_by_filename(filename)
   end
 end
