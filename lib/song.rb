@@ -12,7 +12,6 @@ class Song
     else
       self.artist.name = name
     end
-    self.artist.save
   end
 
   def self.new_by_filename(file)
@@ -23,6 +22,6 @@ class Song
     song.artist_name= song_artist
     song.artist.add_song(song)
     song
-    
+
   end
 end
