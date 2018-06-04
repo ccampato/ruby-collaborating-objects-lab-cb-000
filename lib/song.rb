@@ -17,7 +17,7 @@ class Song
       artist_name= entry.split(" - ")[1]
 
       new_instance = Song.new(song_name)
-      new_instance.artis= artist_name
+      new_instance.artist= artist_name
       binding.pry
       new_instance.artist.save
 
